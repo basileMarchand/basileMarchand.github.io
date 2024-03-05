@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+p {
+  color: red;
+}
+
+img.profile {
+  border-radius: 50%;
+  width: 40px;
+}
+
+div#the_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.school > b {
+  color: darkblue;
+  font-weight: 700;
+}
+
+h2 {
+  background-color: lightsalmon;
+  border-radius: 0 10px 0 10px;
+  padding: 0px 10px;
+}
+
+div.xp {
+  color: rgb(178, 178, 211);
+  border: 1px solid chocolate;
+  border-radius: 15px;
+  padding: 5px;
+  transition: all 0.5s;
+  margin: 10px 0px;
+}
+
+div.xp:hover:nth-child(2n) {
+  transform: rotate(2deg) translate(10px, 10px);
+}
+
+div.xp:hover:nth-child(2n + 1) {
+  transform: rotate(-2deg) translate(-10px, -10px);
+}
+
+div.school-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: normal;
+}
+
+div.school {
+  background-color: tomato;
+  width: 30%;
+  min-width: 300px;
+  border-radius: 0 10px 0 10px;
+  padding-left: 10px;
+}
+
+div.school2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: url("https://www.w3schools.com/cssref/paper.gif");
+}
+
+.easteregg {
+  display: none;
+}
+
+div#the_header > h1:hover + .easteregg {
+  display: inline;
+}
